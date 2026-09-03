@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Navigation Bar */
+header {
+    background: #111;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 450px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba")
+    center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #b20710;
+}
+
+/* Movies */
+.movies {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.movies h2,
+.booking h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    width: 230px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.poster {
+    height: 250px;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.movie-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.movie-card p {
+    margin: 7px;
+    color: #555;
+}
+
+.book-btn {
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background: #b20710;
+}
+
+/* Booking */
+.booking {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b20710;
+}
+
+/* Contact */
+.contact {
+    padding: 45px 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .movie-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
